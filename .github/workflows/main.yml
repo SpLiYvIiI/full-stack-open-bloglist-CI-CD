@@ -13,8 +13,8 @@ jobs:
   simple_deployment_pipeline:
       runs-on: ubuntu-18.04
       env: 
-        MONGODB_URI: ${{ secrets.MONGO_URI }} 
-        MONGODB_URI_TEST: ${{secrets.TEST_MONGO_URI}}
+        MONGODB_URI: ${{ secrets.MONGODB_URI }} 
+        MONGODB_URI_TEST: ${{secrets.MONGODB_URI_TEST}}
         SECRET: ${{secrets.SECRET}}
       steps:
         - uses: actions/checkout@v2
