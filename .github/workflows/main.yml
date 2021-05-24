@@ -18,7 +18,7 @@ jobs:
           with:
             node-version: '12.x'
         - name: npm install 
-          run: npm install  
+          run: npm install && cd client && npm install
         - name: lint front-end
           run: npm run lint:client
         - name: lint back-end
