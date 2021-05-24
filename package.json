@@ -40,12 +40,5 @@
     "test:client": "cd client && npm test",
     "test:all": "npm test && npm run test:client",
     "test:e2e": "cd client && npm run test:e2e"
-  },
-  "jest": {
-    "testEnvironment": "node",
-    "testPathIgnorePatterns": [
-      "<rootDir>/client/",
-      "<rootDir>/node_modules/"
-    ]
   }
 }
