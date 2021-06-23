@@ -50,7 +50,7 @@ jobs:
             checkstring: "ok"
             rollbackonhealthcheckfailed: true
           env:
-            HD_MONGO_URI: ${{ secrets.MONGODB_URI }} 
+            HD_MONGODB_URI: ${{ secrets.MONGODB_URI }} 
             HD_SECRET: ${{secrets.SECRET}}
         
 
